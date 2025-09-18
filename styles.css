@@ -23,6 +23,7 @@ h1{
   flex-wrap: wrap;
   gap: 65px;
   width: 90vw;
+  justify-content: center;
 
 }
 
@@ -39,6 +40,7 @@ h1{
   align-items: center;
   
   justify-content: space-around;
+  box-shadow: 0 20px 30px rgb(51, 49, 49);
 }
 
 .card-img{
@@ -67,6 +69,32 @@ font-size: 30px;
   background-color: white;
 
   font-size: 20px;
+}
+
+button {
+
+  background-color: rgb(93, 169, 219);
+  margin: 8px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+@media screen and (mad-width: 800px) {
+  .container{
+    background-color: red;
+  }
+}
+
+@media screen and (mad-width: 800px) {
+  .card{
+
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+    background-color: green;
+  }
 }
 
 
