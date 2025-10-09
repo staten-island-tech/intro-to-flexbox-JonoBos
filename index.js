@@ -5,7 +5,7 @@ const card = [
     img: "data:image/webp;base64,...",
     price: "$120+",
     inStock: true,
-    created: "1985",
+    created: 1985,
     rating: 4.86,
     colorway: "Chicago",
     releaseDate: "1985-09-15",
@@ -18,7 +18,7 @@ const card = [
     img: "data:image/webp;base64,...",
     price: "$110+",
     inStock: false,
-    created: "1986",
+    created: 1986,
     rating: 4.5,
     colorway: "White/Red",
     releaseDate: "1986-11-01",
@@ -31,7 +31,7 @@ const card = [
     img: "data:image/webp;base64,...",
     price: "$150+",
     inStock: true,
-    created: "1988",
+    created: 1988,
     rating: 4.7,
     colorway: "White/Cement",
     releaseDate: "1988-02-06",
@@ -44,7 +44,7 @@ const card = [
     img: "data:image/webp;base64,...",
     price: "$160+",
     inStock: true,
-    created: "1989",
+    created: 1989,
     rating: 4.6,
     colorway: "Bred",
     releaseDate: "1989-02-17",
@@ -470,7 +470,17 @@ const card = [
   }
 ]
 
+function inject(item){
 
-card.forEach((item)=> {
-    console.log(item.title)
-})
+  DOMSelectors.display.insertAdjacentHTML(
+    "afterbegin",
+    `<div class="display-card">
+      <img class="display-img" src="${item.img}"/>
+      <h2 class="display-brand">${item.brand}</h2>
+      <h3 class="display-brand">${item.title}</h3>
+      <button class="remove btn">Remove Card</button>
+    </div>`
+  );
+}
+
+inject(card[0]);
