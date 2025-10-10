@@ -471,6 +471,9 @@ const card = [
 ]
 
 function inject(item){
+  const DOMSelectors = {
+  display: document.querySelector(".container")
+};
 
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
@@ -483,4 +486,4 @@ function inject(item){
   );
 }
 
-inject(card[0]);
+card.forEach((card)=>inject(card));
