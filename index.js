@@ -487,3 +487,36 @@ function inject(item){
 }
 
 card.forEach((card)=>inject(card));
+
+const shoppingCart=[]
+
+const DOMSelectors = {
+  title: document.getElementById("title"),
+  img: document.getElementById("img"),
+  price: document.getElementById("price"),
+  inStock: document.getElementById("inStock"),
+  created: document.getElementById("created"),
+  rating: document.getElementById("rating"),
+  colorway: document.getElementById("colorway"),
+  releaseDate: document.getElementById("releaseDate"),
+  brand: document.getElementById("brand"),
+  category: document.getElementById("category"),
+};
+
+function getcard() {
+  const buttons = document.querySelectorAll("button");
+  const btnArr = Array.from(buttons);
+
+  btnArr.forEach((btn) =>
+    btn.addEventListener("click", function (event) {
+      console.log(
+        event.target.closest(".display-card").getAttribute("data-title"),
+        event.target.textContent
+      );
+    })
+  );
+}
+
+
+
+    
