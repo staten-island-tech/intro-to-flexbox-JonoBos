@@ -470,53 +470,44 @@ const card = [
   }
 ]
 
-function inject(item){
+let shoppingCart = [];
+
+function inject(item) {
   const DOMSelectors = {
-  display: document.querySelector(".container")
-};
+    display: document.querySelector(".container"),
+  };
 
   DOMSelectors.display.insertAdjacentHTML(
     "afterbegin",
     `<div class="display-card">
-      <img class="display-img" src="${item.img}"/>
+      <img class="display-img" src="${item.img}" />
       <h2 class="display-brand">${item.brand}</h2>
-      <h3 class="display-brand">${item.title}</h3>
-      <button class="remove btn">Remove Card</button>
+      <h3 class="display-title">${item.title}</h3>
+      <button class="add button" data-title="${item.title}">Add to cart</button>
     </div>`
   );
 }
 
-card.forEach((card)=>inject(card));
 
-const shoppingCart=[]
+card.forEach((cardItem) => inject(cardItem));
 
-const DOMSelectors = {
-  title: document.getElementById("title"),
-  img: document.getElementById("img"),
-  price: document.getElementById("price"),
-  inStock: document.getElementById("inStock"),
-  created: document.getElementById("created"),
-  rating: document.getElementById("rating"),
-  colorway: document.getElementById("colorway"),
-  releaseDate: document.getElementById("releaseDate"),
-  brand: document.getElementById("brand"),
-  category: document.getElementById("category"),
-};
 
 function getcard() {
-  const buttons = document.querySelectorAll("button");
-  const btnArr = Array.from(buttons);
+  const buttons = document.querySelectorAll(".add");
 
-  btnArr.forEach((btn) =>
-    btn.addEventListener("click", function (event) {
-      console.log(
-        event.target.closest(".display-card").getAttribute("data-title"),
-        event.target.textContent
-      );
+  buttons.forEach((btn) =>
+    btn.addEventListener("click", function () {
+      const title = btn.getAttribute("data-title"); 
+      display: document.querySelector(shoppingCart)
+      
+//      shoppingCart.push(title);
+//      console.log(shoppingCart);
     })
   );
 }
 
+
+//getcard();
 
 
     
