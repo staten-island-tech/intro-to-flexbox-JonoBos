@@ -498,13 +498,29 @@ function getcard() {
   buttons.forEach((btn) =>
     btn.addEventListener("click", function () {
       const title = btn.getAttribute("data-title"); 
-      display: document.querySelector(shoppingCart)
+
+      function displaycard(){
+        const cartdisplay = document.querySelector(".cart-container-show")
+        cartdisplay.addEventListener('click', function(){
+          
+          
+
+
+        }
+      
+      )
+
+
+      }
+
       
 //      shoppingCart.push(title);
 //      console.log(shoppingCart);
     })
   );
 }
+
+
 
 
 //getcard();
