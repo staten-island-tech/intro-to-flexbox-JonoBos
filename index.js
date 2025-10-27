@@ -1,4 +1,4 @@
-const card = [
+const products = [
   {
     id: 1,
     title: "Jordan 1's",
@@ -470,55 +470,62 @@ const card = [
   }
 ]
 
-let shoppingCart = [];
 
-function inject(item) {
-  const DOMSelectors = {
-    display: document.querySelector(".container"),
-  };
+const DOMSelectors = {
+  display: document.getElementById("display"),
+  cartDisplay: document.getElementById("cartDisplay"),
+}
 
+
+let cart = [];
+
+
+products.forEach((item) => {
   DOMSelectors.display.insertAdjacentHTML(
-    "afterbegin",
+    "beforeend",
     `<div class="display-card">
-      <img class="display-img" src="${item.img}" />
-      <h2 class="display-brand">${item.brand}</h2>
-      <h3 class="display-title">${item.title}</h3>
-      <button class="add button" data-title="${item.title}">Add to cart</button>
+      <img src="${item.img}" alt="${item.title}" width="150">
+      <h2>${item.brand}</h2>
+      <h3>${item.title}</h3>
+      <p>${item.price}</p>
+      <button class="addBtn" id="${item.id}">Add to Cart</button>
     </div>`
   );
+});
+
+
+document.querySelectorAll(".addBtn").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const id = btn.getAttribute("id");
+    addToCart(id);
+  });
+});
+
+
+function addToCart(id) {
+  const product = products.find((p) => p.id == id);
+  cart.push(product);
 }
 
 
-card.forEach((cardItem) => inject(cardItem));
-
-
-function getcard() {
-  const buttons = document.querySelectorAll(".add");
-
-  buttons.forEach((btn) =>
-    btn.addEventListener("click", function () {
-      const title = btn.getAttribute("data-title"); 
-
-      function displaycard(){
-        const cartdisplay = document.querySelector(".cart-container-show")
-        cartdisplay.addEventListener('click', function(){
-          
-          
-
-
-        }
-      
-      )
-
-
-      }
-
-      
-//      shoppingCart.push(title);
-//      console.log(shoppingCart);
-    })
-  );
+function showCart() {
+  DOMSelectors.cartDisplay.innerHTML = "<h2>Your Cart</h2>";
+  cart.forEach((item) => {
+    DOMSelectors.cartDisplay.insertAdjacentHTML(
+      "beforeend",
+      `<div class="cart-card">
+        <h3>${item.title}</h3>
+        <p>${item.price}</p>
+      </div>`
+    );
+  });
 }
+
+
+function hideCart() {
+  DOMSelectors.cartDisplay.innerHTML = "";
+}
+
 
 
 
