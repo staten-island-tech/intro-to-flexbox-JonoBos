@@ -1,3 +1,16 @@
+
+
+#display{
+
+
+  
+}
+#mytitle{
+
+  text-align: center;
+}
+
+
 #cartDisplay {
   background-color: #f8f8f8;
   padding: 20px;
@@ -66,13 +79,46 @@
   transition: background-color 0.2s ease;
 }
 
+.addBtn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
 .addBtn:hover {
   background-color: #0056b3;
 }
 
+.cart-btn1{
+  background-color: rgb(5, 207, 5);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cart-btn2{
+  background-color:#ee2222;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
 .display-card{
+  width: 20%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
  /* centers cards horizontally */
   gap: 1rem; /* space between cards */
   flex: 1 1 calc(25% - 1rem); /* 4 per row (100% ÷ 4 = 25%) minus the gap */
@@ -81,5 +127,7 @@
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
+  align-items: stretch;
 
 }
+
