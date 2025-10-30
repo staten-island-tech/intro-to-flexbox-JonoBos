@@ -1,133 +1,156 @@
-
-
-#display{
-
-
-  
-}
-#mytitle{
-
-  text-align: center;
+/* ---------- Global Styles ---------- */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #e7e6e6;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 600;
+}
 
-#cartDisplay {
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
+button {
+  font-family: inherit;
+}
+
+/* ---------- Layout Containers ---------- */
+#display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  font-family: Arial, sans-serif;
+}
+
+#mytitle {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin-top: 2rem;
+}
+
+/* ---------- Cart Section ---------- */
+#cartDisplay {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 3rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
-/* Section title */
 #cartDisplay h2 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  font-size: 1.6rem;
+  color: #222;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
 }
 
-/* Each product card */
+/* ---------- Product Cards ---------- */
 .cart-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000000;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 15px 20px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #111;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   color: #fff;
 }
 
-/* Hover animation */
 .cart-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Product title */
 .cart-card h3 {
-  margin: 0;
   font-size: 1.1rem;
-  color: #ffffff;
+  color: #fff;
 }
 
-/* Product price */
 .cart-card p {
-  margin: 0;
   font-size: 1rem;
   font-weight: 600;
-  color: #f7f7f7;
+  color: #eee;
 }
 
-/* Add-to-cart buttons */
+/* ---------- Buttons ---------- */
+button,
+.addBtn,
+.cart-btn1,
+.cart-btn2 {
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
 .addBtn {
   background-color: #007bff;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
 }
-
-.addBtn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
 .addBtn:hover {
   background-color: #0056b3;
 }
 
-.cart-btn1{
-  background-color: rgb(5, 207, 5);
+.cart-btn1 {
+  background-color: #0bbf38;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+}
+.cart-btn1:hover {
+  background-color: #099a2f;
 }
 
-.cart-btn2{
-  background-color:#ee2222;
+.cart-btn2 {
+  background-color: #e63946;
   color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+}
+.cart-btn2:hover {
+  background-color: #b71c1c;
 }
 
-.display-card{
-  width: 20%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
- /* centers cards horizontally */
-  gap: 1rem; /* space between cards */
-  flex: 1 1 calc(25% - 1rem); /* 4 per row (100% ÷ 4 = 25%) minus the gap */
-  background: #f5f5f5;
-  border: 1px solid #ccc;
+/* ---------- Display Cards (Product Grid) ---------- */
+.display-card {
+  flex: 1 1 calc(25% - 1rem);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
-  align-items: stretch;
-
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.display-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .display-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .display-card {
+    flex: 1 1 100%;
+  }
+
+  #display {
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
