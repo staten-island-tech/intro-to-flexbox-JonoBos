@@ -1,4 +1,4 @@
-/* ---------- Global Styles ---------- */
+
 body {
   font-family: "Inter", Arial, sans-serif;
   background-color: #e7e6e6;
@@ -16,7 +16,7 @@ button {
   font-family: inherit;
 }
 
-/* ---------- Layout Containers ---------- */
+
 #display {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +35,7 @@ button {
   margin-top: 2rem;
 }
 
-/* ---------- Cart Section ---------- */
+
 #cartDisplay {
   background-color: #fff;
   padding: 2rem;
@@ -55,7 +55,7 @@ button {
   padding-bottom: 0.5rem;
 }
 
-/* ---------- Product Cards ---------- */
+
 .cart-card {
   display: flex;
   justify-content: space-between;
@@ -83,7 +83,6 @@ button {
   color: #eee;
 }
 
-/* ---------- Buttons ---------- */
 button,
 .addBtn,
 .cart-btn1,
@@ -120,7 +119,7 @@ button,
   background-color: #b71c1c;
 }
 
-/* ---------- Display Cards (Product Grid) ---------- */
+
 .display-card {
   flex: 1 1 calc(25% - 1rem);
   background: #fff;
@@ -137,7 +136,7 @@ button,
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 900px) {
   .display-card {
     flex: 1 1 calc(50% - 1rem);

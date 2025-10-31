@@ -158,7 +158,7 @@ const products = [
   {
     id: 13,
     title: "Adidas Ultraboost 1.0",
-    img: "data:image/webp;base64,...",  
+    img: "data:image/jpeg;base64,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",  
     price: "$135",
     inStock: true,
     created: "2015",              // approximate first release year
@@ -171,7 +171,7 @@ const products = [
   {
     id: 14,
     title: "Adidas Superstar II",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.qBSzfGCMLCKa0g474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1",
     price: "$100",
     inStock: true,
     created: "1970s",             // original era
@@ -184,7 +184,7 @@ const products = [
   {
     id: 15,
     title: "Adidas Grand Court 2.0 (Women)",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.7fVNinpWUN7GpQ474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$42",
     inStock: true,
     created: "2020s",
@@ -197,7 +197,7 @@ const products = [
   {
     id: 16,
     title: "Adidas Grand Court 2.0 (Men)",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.S4Ez702TMR9Zlw474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$34.30",
     inStock: true,
     created: "2020s",
@@ -210,7 +210,7 @@ const products = [
   {
     id: 17,
     title: "Adidas Campus 00s",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.8rPrS%2fspp%2bavAw474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$79.99",
     inStock: true,
     created: "2000s (retro revamp)",
@@ -223,7 +223,7 @@ const products = [
   {
     id: 18,
     title: "Adidas Swift Run 1.0",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.TlwPH3j571P5Tw474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$60",
     inStock: true,
     created: "mid-2010s",
@@ -236,7 +236,7 @@ const products = [
   {
     id: 19,
     title: "Adidas Gazelle Indoor",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.K75ukDI1IstiFg474C474&o=5&pid=21.1&w=160&h=228&qlt=100&dpr=1&pcl=f5f5f5",
     price: "$96",
     inStock: true,
     created: "1960s",
@@ -249,7 +249,7 @@ const products = [
   {
     id: 20,
     title: "Adidas Sambae",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.dAlo8ey1Mt7MlQ474C474&o=5&pid=21.1&w=160&h=228&qlt=100&dpr=1&c=8&pcl=f5f5f5",
     price: "$110",
     inStock: true,
     created: "modern reinterpretation",
@@ -262,7 +262,7 @@ const products = [
   {
     id: 21,
     title: "Adidas Breaknet Sleek",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.z5LvPEiAnjiKkA474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$65",
     inStock: true,
     created: "2020s",
@@ -275,7 +275,7 @@ const products = [
   {
     id: 22,
     title: "Adidas Lite Racer Adapt 7.0",
-    img: "data:image/webp;base64,...",
+    img: "https://th.bing.com/th?id=OPHS.EijC%2bKw%2fRw6uTQ474C474&w=128&h=128&o=5&bw=6&bc=ffffff&pid=21.1",
     price: "$70",
     inStock: true,
     created: "2020s",
@@ -288,7 +288,7 @@ const products = [
   {
     id: 23,
     title: "Adidas VL Court 3.0",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.RHXOUhamU9%2bKeg474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$57",
     inStock: true,
     created: "2020s",
@@ -301,7 +301,7 @@ const products = [
   {
     id: 24,
     title: "Adidas Grand Court Alpha",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.ke%2fFySYVYfhY1A474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$80",
     inStock: true,
     created: "2000s",
@@ -315,7 +315,7 @@ const products = [
     {
     id: 25,
     title: "New Balance 740",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.BeZqHplhMOfBXQ474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1",
     price: "$114.99",
     inStock: true,
     created: "2000s (revived)",
@@ -328,7 +328,7 @@ const products = [
   {
     id: 26,
     title: "New Balance 530",
-    img: "data:image/webp;base64,...",
+    img: "https://th.bing.com/th/id/OIP.URfm-8g-OQS4LhlSNYbPdAAAAA?w=163&h=108&c=7&qlt=95&bgcl=01615e&r=0&o=6&pid=13.1",
     price: "$109.99",
     inStock: true,
     created: "1992",
@@ -341,7 +341,7 @@ const products = [
   {
     id: 27,
     title: "New Balance 327",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.ecPSIoLqZwUv2A474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$104.99",
     inStock: true,
     created: "2020",
@@ -354,7 +354,7 @@ const products = [
   {
     id: 28,
     title: "New Balance 574",
-    img: "data:image/webp;base64,...",
+    img: "https://th.bing.com/th/id/OPHS.uSkXQxOr6NJrRQ474C474?w=128&h=128&o=5&bw=6&bc=ffffff&pid=21.1",
     price: "$99.99",
     inStock: true,
     created: "1988",
@@ -367,7 +367,7 @@ const products = [
   {
     id: 29,
     title: "New Balance 1906R",
-    img: "data:image/webp;base64,...",
+    img: "https://th.bing.com/th?id=OPHS.u3BR%2fkRmCc7T2g474C474&w=140&h=106&o=5&pid=21.1",
     price: "$154.99",
     inStock: true,
     created: "2010s (revived 2022)",
@@ -380,7 +380,7 @@ const products = [
   {
     id: 30,
     title: "New Balance 9060",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.Rz4ezVuReWXkNw474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$159.99",
     inStock: true,
     created: "2023",
@@ -393,7 +393,7 @@ const products = [
   {
     id: 31,
     title: "New Balance 550 (Women)",
-    img: "data:image/webp;base64,...",
+    img: "https://images.stockx.com/images/New-Balance-550-White-Multi-Color-W.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1675018827?height=78&width=78",
     price: "$79.99",
     inStock: true,
     created: "1989 (revived)",
@@ -406,7 +406,7 @@ const products = [
   {
     id: 32,
     title: "New Balance 550 (Men)",
-    img: "data:image/webp;base64,...",
+    img: "https://tse1.mm.bing.net/th/id/OIP.uz4_xw5_siJ-neQxsB5SLAHaF7?rs=1&pid=ImgDetMain&o=7&rm=3",
     price: "$109.99",
     inStock: true,
     created: "1989 (revived)",
@@ -419,7 +419,7 @@ const products = [
   {
     id: 33,
     title: "New Balance 2002R",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.wQIOuevwsfPpcw474C474&o=5&pid=21.1&w=160&h=160&qlt=100&dpr=1&c=8&pcl=f5f5f5",
     price: "$144.99",
     inStock: true,
     created: "2010 (revived)",
@@ -432,7 +432,7 @@ const products = [
   {
     id: 34,
     title: "New Balance 480",
-    img: "data:image/webp;base64,...",
+    img: "https://th.bing.com/th/id/OPHS.AZk4Of2G0jaUpA474C474?w=140&h=106&o=5&pid=21.1",
     price: "$99.99",
     inStock: true,
     created: "1980s",
@@ -445,7 +445,7 @@ const products = [
   {
     id: 35,
     title: "New Balance Fresh Foam 680v8",
-    img: "data:image/webp;base64,...",
+    img: "https://www.bing.com/th?id=OPHS.H9DAn6DmzNrEkg474C474&o=5&pid=21.1&w=148&h=148&qlt=100&dpr=1&bw=6&bc=FFFFFF",
     price: "$79.99",
     inStock: true,
     created: "2024",
@@ -458,7 +458,7 @@ const products = [
   {
     id: 36,
     title: "New Balance Fresh Foam X 1080v14",
-    img: "data:image/webp;base64,...",
+    img: "https://tse3.mm.bing.net/th/id/OIP.HUypGFrYOnfW8JvH2NXjigHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
     price: "$164.99",
     inStock: true,
     created: "2025",
